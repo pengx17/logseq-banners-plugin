@@ -2,9 +2,6 @@
 
 name: Releases
 
-env:
-  PLUGIN_NAME: logseq-plugin-template-react
-
 # Controls when the action will run.
 on:
   push:
@@ -37,4 +34,3 @@ jobs:
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
